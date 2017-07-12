@@ -101,6 +101,13 @@ public class MainActivity extends AppCompatActivity {
 
                 return true;
 
+            case R.id.favorite:
+
+                Intent i = new Intent(this,FavoriteActivity.class);
+                startActivity(i);
+
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -162,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<MovieDetails> call, Response<MovieDetails> response) {
                 List<Result> record = response.body().getResults();
-                for (Result ac : record) {
+                for ( Result ac : record) {
                     pj = new PojoImage();
                     pj.setUrl(ac.getPosterPath());
                     pj.setId(ac.getId().toString());
