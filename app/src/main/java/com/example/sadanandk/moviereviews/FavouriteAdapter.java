@@ -60,7 +60,7 @@ public class FavouriteAdapter  extends BaseAdapter
 
             Log.e("mahessh","ifnull");
 
-            
+
             v.setTag(holder);
         }
         else {
