@@ -55,6 +55,9 @@ public class FavouriteAdapter  extends BaseAdapter
             holder=new ViewHolder3();
             holder.iv = (ImageView) v.findViewById(R.id.i1);
             holder.tv = (TextView) v.findViewById(R.id.movie_tital);
+
+
+
             Log.e("mahessh","ifnull");
             v.setTag(holder);
         }
